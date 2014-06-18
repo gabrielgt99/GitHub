@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script type="text/javascript">
+
+	/**
+	//Funciones
+	edad = 18;
+	if(edad<18){
+		alert("Eres menor de edad");
+	} else{
+		alert("Eres mayor de edad");
+	};
+	**/
+
+	/**
+	//(while)
+	//Arreglo
+	console.log("Personajes que me acuerdo de Mortal Kombat");
+	personaje1 = "Kintaro";
+	personaje2 = "Shao Kang";
+	personaje3 = "Scorpion";
+
+	personajes = ["Sub-Zero", "Kitana", "Kung Lao", "Raiden", "Jax"];
+	console.log(personajes[2]);
+	**/
+
+	/**
+	//Uso del DOM
+	function saludo(){
+		nombre = document.getElementById("nombre").value;
+		alert(nombre);
+	}
+	**/
+
+	/**
+	//Detector de edad con el uso de If else y DOM
+	function edad(){
+		anos = document.getElementById("entrada").value;
+		if(anos<18){
+			alert("Eres menor de edad");
+		}else{
+			alert("Eres mayor de edad, Bienvenido!");
+		};
+	}
+	**/
+	function suma(){
+		obj1 = Number(document.getElementById("entrada1").value);
+		obj2 = Number(document.getElementById("entrada2").value);
+		alert(obj1+obj2);
+	}
+	function resta(){
+		obj1 = document.getElementById("entrada1").value;
+		obj2 = document.getElementById("entrada2").value;
+		alert(obj1-obj2);
+	}
+	function multiplicacion(){
+		obj1 = document.getElementById("entrada1").value;
+		obj2 = document.getElementById("entrada2").value;
+		alert(obj1*obj2);
+	}	
+	function division(){
+
+		obj1 = document.getElementById("entrada1").value;
+		obj2 = document.getElementById("entrada2").value;
+		if(obj1&&obj2 == 0){
+			alert("El caracter es invalido")
+		}else{
+			alert(obj1/obj2);
+		}
+	}
+
+	
+	</script>
+	<input type="text" id="entrada1" />
+	<input type="text" id="entrada2" />
+	<button onclick="suma();">+</button>
+	<button onclick="resta();">-</button>
+	<button onclick="multiplicacion();">*</button>
+	<button onclick="division();">/</button>
+	<!--
+	<p>Cuantos anos tienes?</p>
+	<input type="text" id="entrada" />
+	<button onclick="edad();">Enviar</button>
+	-->
+
+
+	<!--
+	<input type="text" id="nombre" />
+	<button onclick="saludo()">Saludo</button>
+	-->
+<body>
+</html>
